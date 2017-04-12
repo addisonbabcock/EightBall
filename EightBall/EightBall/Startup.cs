@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace EightBall
 {
@@ -26,6 +27,7 @@ namespace EightBall
 
             app.Run(async (context) =>
             {
+                context.Response.ContentType = "application/json";
                 await context.Response.WriteAsync(new EightBall().GetJson());
             });
         }
