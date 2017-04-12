@@ -10,7 +10,7 @@ namespace EightBall
             //source: https://en.wikipedia.org/wiki/Magic_8-Ball
 
             var rand = new Random();
-            var index = rand.Next(20);
+            var index = rand.Next(21);
 
             switch (index)
             {
@@ -73,6 +73,9 @@ namespace EightBall
 
                 case 19:
                     return "Very doubtful";
+
+                case 20:
+                    return "Laurier is wrong";
 
                 default:
                     return string.Format("Unknown value {0}", index);
