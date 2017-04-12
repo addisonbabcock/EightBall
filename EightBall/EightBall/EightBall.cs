@@ -7,78 +7,81 @@ namespace EightBall
     {
         public string GetRandom()
         {
-            //source: https://en.wikipedia.org/wiki/Magic_8-Ball
-
             var rand = new Random();
-            var index = rand.Next(21);
 
+            return GetWisdom(rand.Next(21));
+        }
+
+        private static string GetWisdom(int index)
+        {
+            //source: https://en.wikipedia.org/wiki/Magic_8-Ball
             switch (index)
             {
                 case 0:
-                    return "It is certain";
+                    return "It is certain.";
 
                 case 1:
-                    return "It is decidedly so";
+                    return "It is decidedly so.";
 
                 case 2:
-                    return "Without a doubt";
+                    return "Without a doubt.";
 
                 case 3:
-                    return "Yes definitely";
+                    return "Yes definitely.";
 
                 case 4:
-                    return "You may rely on it";
+                    return "You may rely on it.";
 
                 case 5:
-                    return "As I see it, yes";
+                    return "As I see it, yes.";
 
                 case 6:
-                    return "Most likely";
+                    return "Most likely.";
 
                 case 7:
-                    return "Outlook good";
+                    return "Outlook good.";
 
                 case 8:
-                    return "Yes";
+                    return "Yes.";
 
                 case 9:
-                    return "Signs point to yes";
+                    return "Signs point to yes.";
 
                 case 10:
-                    return "Reply hazy try again";
+                    return "Reply hazy try again.";
 
                 case 11:
-                    return "Ask again later";
+                    return "Ask again later.";
 
                 case 12:
-                    return "Better not tell you now";
+                    return "Better not tell you now.";
 
                 case 13:
-                    return "Cannot predict now";
+                    return "Cannot predict now.";
 
                 case 14:
-                    return "Concentrate and ask again";
+                    return "Concentrate and ask again.";
 
                 case 15:
-                    return "Don't count on it";
+                    return "Don't count on it.";
 
                 case 16:
-                    return "My reply is no";
+                    return "My reply is no.";
 
                 case 17:
-                    return "My sources say no";
+                    return "My sources say no.";
 
                 case 18:
-                    return "Outlook not so good";
+                    return "Outlook not so good.";
 
                 case 19:
-                    return "Very doubtful";
+                    return "Very doubtful.";
 
                 case 20:
-                    return "Laurier is wrong";
+                    return "Laurier is wrong.";
 
                 default:
-                    return string.Format("Unknown value {0}", index);
+                    return string.Format("Unknown value {0}.", index);
             }
         }
 
