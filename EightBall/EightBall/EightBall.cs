@@ -14,7 +14,6 @@ namespace EightBall
 
         private static string GetWisdom(int index)
         {
-            return "test";
             //source: https://en.wikipedia.org/wiki/Magic_8-Ball
             switch (index)
             {
