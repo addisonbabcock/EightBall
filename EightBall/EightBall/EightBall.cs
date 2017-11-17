@@ -77,8 +77,8 @@ namespace EightBall
                 case 19:
                     return "Very doubtful.";
 
-                case 20:
-                    return "Laurier is wrong.";
+            /*    case 20:
+                    return "Laurier is wrong.";*/
 
                 default:
                     return string.Format("Unknown value {0}.", index);
