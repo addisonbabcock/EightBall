@@ -21,7 +21,7 @@ namespace EightBall
 
             //source: https://en.wikipedia.org/wiki/Magic_8-Ball
 
-            /*_wisdom.Add("It is certain.");
+            _wisdom.Add("It is certain.");
             _wisdom.Add("It is decidedly so.");
             _wisdom.Add("Without a doubt.");
             _wisdom.Add("Yes definitely.");
@@ -41,8 +41,8 @@ namespace EightBall
             _wisdom.Add("My sources say no.");
             _wisdom.Add("Outlook not so good.");
             _wisdom.Add("Very doubtful.");
-            _wisdom.Add("Laurier is wrong.");*/
-            _wisdom.Add("Running in Azure!");
+            _wisdom.Add("Laurier is wrong.");
+            _wisdom.Add("NO YOU'RE FAKE NEWS.");
         }
 
         private string GetWisdom(int index)
