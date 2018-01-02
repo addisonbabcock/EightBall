@@ -1,88 +1,52 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 
 namespace EightBall
 {
     public class EightBall
     {
+        private List<string> _wisdom;
+
         public string GetRandom()
         {
             var rand = new Random();
 
-            return GetWisdom(rand.Next(21));
+            return GetWisdom(rand.Next(_wisdom.Count));
         }
 
-        private static string GetWisdom(int index)
+        public EightBall()
         {
+            _wisdom = new List<string>();
+
             //source: https://en.wikipedia.org/wiki/Magic_8-Ball
-            switch (index)
-            {
-                case 0:
-                    return "It is certain.";
 
-                case 1:
-                    return "It is decidedly so.";
+            _wisdom.Add("It is certain.");
+            _wisdom.Add("It is decidedly so.");
+            _wisdom.Add("Without a doubt.");
+            _wisdom.Add("Yes definitely.");
+            _wisdom.Add("You may rely on it.");
+            _wisdom.Add("As I see it, yes.");
+            _wisdom.Add("Most likely.");
+            _wisdom.Add("Outlook good.");
+            _wisdom.Add("Yes.");
+            _wisdom.Add("Signs point to yes.");
+            _wisdom.Add("Reply hazy try again.");
+            _wisdom.Add("Ask again later.");
+            _wisdom.Add("Better not tell you now.");
+            _wisdom.Add("Cannot predict now.");
+            _wisdom.Add("Concentrate and ask again.");
+            _wisdom.Add("Don't count on it.");
+            _wisdom.Add("My reply is no.");
+            _wisdom.Add("My sources say no.");
+            _wisdom.Add("Outlook not so good.");
+            _wisdom.Add("Very doubtful.");
+            _wisdom.Add("Laurier is wrong.");
+        }
 
-                case 2:
-                    return "Without a doubt.";
-
-                case 3:
-                    return "Yes definitely.";
-
-                case 4:
-                    return "You may rely on it.";
-
-                case 5:
-                    return "As I see it, yes.";
-
-                case 6:
-                    return "Most likely.";
-
-                case 7:
-                    return "Outlook good.";
-
-                case 8:
-                    return "Yes.";
-
-                case 9:
-                    return "Signs point to yes.";
-
-                case 10:
-                    return "Reply hazy try again.";
-
-                case 11:
-                    return "Ask again later.";
-
-                case 12:
-                    return "Better not tell you now.";
-
-                case 13:
-                    return "Cannot predict now.";
-
-                case 14:
-                    return "Concentrate and ask again.";
-
-                case 15:
-                    return "Don't count on it.";
-
-                case 16:
-                    return "My reply is no.";
-
-                case 17:
-                    return "My sources say no.";
-
-                case 18:
-                    return "Outlook not so good.";
-
-                case 19:
-                    return "Very doubtful.";
-
-            /*    case 20:
-                    return "Laurier is wrong.";*/
-
-                default:
-                    return string.Format("Unknown value {0}.", index);
-            }
+        private string GetWisdom(int index)
+        {
+            return _wisdom[index];
         }
 
         public string GetJson()
