@@ -41,7 +41,10 @@ namespace EightBall
                 "My reply is no.",
                 "My sources say no.",
                 "Outlook not so good.",
-                "Very doubtful."
+                "Very doubtful.",
+                "Laurier is wrong.",
+                "NO YOU'RE FAKE NEWS.",
+                "Maybe try Twitter instead."
             };
         }
 
