@@ -41,9 +41,6 @@ namespace EightBall
             _wisdom.Add("My sources say no.");
             _wisdom.Add("Outlook not so good.");
             _wisdom.Add("Very doubtful.");
-            _wisdom.Add("Laurier is wrong.");
-            _wisdom.Add("NO YOU'RE FAKE NEWS.");
-            _wisdom.Add("Maybe try Twitter instead.");
         }
 
         private string GetWisdom(int index)
