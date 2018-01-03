@@ -17,30 +17,32 @@ namespace EightBall
 
         public EightBall()
         {
-            _wisdom = new List<string>();
+            _wisdom = new List<string>
+            {
 
-            //source: https://en.wikipedia.org/wiki/Magic_8-Ball
+                //source: https://en.wikipedia.org/wiki/Magic_8-Ball
 
-            _wisdom.Add("It is certain.");
-            _wisdom.Add("It is decidedly so.");
-            _wisdom.Add("Without a doubt.");
-            _wisdom.Add("Yes definitely.");
-            _wisdom.Add("You may rely on it.");
-            _wisdom.Add("As I see it, yes.");
-            _wisdom.Add("Most likely.");
-            _wisdom.Add("Outlook good.");
-            _wisdom.Add("Yes.");
-            _wisdom.Add("Signs point to yes.");
-            _wisdom.Add("Reply hazy try again.");
-            _wisdom.Add("Ask again later.");
-            _wisdom.Add("Better not tell you now.");
-            _wisdom.Add("Cannot predict now.");
-            _wisdom.Add("Concentrate and ask again.");
-            _wisdom.Add("Don't count on it.");
-            _wisdom.Add("My reply is no.");
-            _wisdom.Add("My sources say no.");
-            _wisdom.Add("Outlook not so good.");
-            _wisdom.Add("Very doubtful.");
+                "It is certain.",
+                "It is decidedly so.",
+                "Without a doubt.",
+                "Yes definitely.",
+                "You may rely on it.",
+                "As I see it, yes.",
+                "Most likely.",
+                "Outlook good.",
+                "Yes.",
+                "Signs point to yes.",
+                "Reply hazy try again.",
+                "Ask again later.",
+                "Better not tell you now.",
+                "Cannot predict now.",
+                "Concentrate and ask again.",
+                "Don't count on it.",
+                "My reply is no.",
+                "My sources say no.",
+                "Outlook not so good.",
+                "Very doubtful."
+            };
         }
 
         private string GetWisdom(int index)
