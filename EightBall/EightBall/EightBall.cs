@@ -44,7 +44,8 @@ namespace EightBall
                 "Very doubtful.",
                 "Laurier is wrong.",
                 "NO YOU'RE FAKE NEWS.",
-                "Maybe try Twitter instead."
+                "Maybe try Twitter instead.",
+                "I didn't show up to work so I can't tell you.",
             };
         }
 
