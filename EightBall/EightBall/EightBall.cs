@@ -44,6 +44,7 @@ namespace EightBall
                 "Wouldn't you like to know.",
                 "Ain't nobody got time for that.",
                 "Why would you even ask that?",
+                "I fart in your general direction.",
             };
         }
 
