@@ -55,8 +55,10 @@ namespace EightBall
 
         public string GetJson()
         {
-            var response = new SlackReponse();
-            response.text = GetRandom();
+            var response = new SlackReponse
+            {
+                text = GetRandom()
+            };
 
             return JsonConvert.SerializeObject(response, Formatting.Indented);
         }
